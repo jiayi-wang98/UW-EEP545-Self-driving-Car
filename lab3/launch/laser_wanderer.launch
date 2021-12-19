@@ -1,0 +1,13 @@
+<launch>
+    <param name="speed" value="1" />
+    <param name="min_delta" value="-0.34" />
+    <param name="max_delta" value="0.341" />
+    <param name="delta_incr" value="0.17" />
+    <param name="dt" value="0.06" />
+    <param name="T" value="40" />
+    <param name="compute_time" value="0.1" />
+    <param name="laser_offset" value="0.2" />
+
+	
+    <node pkg="lab3" type="laser_wanderer.py" name="LaserWanderer" output="screen"/>
+</launch>
